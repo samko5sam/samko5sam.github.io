@@ -180,7 +180,7 @@ function fillinMyWordUrl(){
 function addAllFrame(){
     if (Config.fo == "y"){
         var DicFrame = document.getElementById("myDicFrame");
-        DicFrame.innerHTML = '<p>內嵌視窗</p><hr><button type="button" onclick="reloadAllFrame()" class="myButton">重新整理內嵌視窗</button><br><br>';
+        DicFrame.innerHTML = '<hr><p class="text-align-center">內嵌視窗</p><hr><button type="button" onclick="reloadAllFrame()" class="myButton">重新整理內嵌視窗</button><br><br>';
         for (var i = 0; i < Dic.length; i++) {
             var nowFrame = "iframe-"+i;
             DicFrame.innerHTML += '<iframe src="" title="" id="'+nowFrame+'" name="'+nowFrame+'" class="Diciframe"></iframe><br>';
