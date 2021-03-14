@@ -148,7 +148,7 @@ function addAllatag(){
 
             for (var i = 0; i < Dic.length; i++) {
                 var dicname = Dic[i][0];
-                mymodal.innerHTML += '<a id="engine-a-'+i+'" href="" target="_blank" rel="nofollow" class="DicLink">'+dicname+'</a><br>';
+                mymodal.innerHTML += '<a id="engine-a-'+i+'" href="" target="_blank" rel="nofollow" class="DicLink">'+dicname+'</a><hr>';
             };
         }
 
