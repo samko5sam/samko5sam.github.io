@@ -160,7 +160,7 @@ function addAllatag(){
             nav.innerHTML += '<li class="nav-item"><a class="nav-link" id="engine-a-frame-'+i+'" rel="nofollow" href="" target="Diciframe">'+dicname+'</a></li>';
             //DicLink.innerHTML += '<a id="engine-a-frame-'+i+'" href="" target="Diciframe" rel="nofollow" class="DicLink">'+dicname+'</a><br>';
         };
-        DicLink.innerHTML += '<iframe src="" id="Diciframe" name="Diciframe" width="90%" height="350px"></iframe>';
+        DicLink.innerHTML += '<iframe src="" id="Diciframe" name="Diciframe" width="100%" height="550px"></iframe>';
     }
 }//end
 
