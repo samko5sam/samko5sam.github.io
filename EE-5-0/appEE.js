@@ -143,7 +143,7 @@ function addAllatag(){
         var DicLink = document.getElementById("myDicLink");
         var mymodal = document.getElementById("DicLink");
         if (Config.mode != "anki") {
-            DicLink.innerHTML  = '<button type="button" onclick="openAllTab()" class="btn btn-primary">彈出所有視窗</button><br>';
+            DicLink.innerHTML  = '<button type="button" onclick="openAllTab()" class="btn btn-primary">彈出所有視窗</button>';
             DicLink.innerHTML += '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#DicLink-modal" id="">字典連結</button>'
 
             for (var i = 0; i < Dic.length; i++) {
