@@ -113,7 +113,7 @@ function splitMyUrl(){//related:addCustomUrl() decodeMyWord()
 
 function addtobtn(){
     var x = document.getElementById("addtobtn");
-    x.innerHTML = '<a href="javascript:;" onclick="gotoconfigto()" class="btn btn-primary">TO '+Config.to+'</a>';
+    x.innerHTML = '<a href="javascript:;" onclick="gotoconfigto()" class="nav-link">TO '+Config.to+'</a>';
 }
 
 function gotoconfigto(){
