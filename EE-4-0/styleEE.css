@@ -1,0 +1,120 @@
+/*
+https://www.w3.org/Style/Examples/007/menus.zh_HK.html
+
+
+
+*/
+
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+*{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/*tag*/
+a{
+    text-decoration-line: none;
+}
+
+noscript{
+    color:gray;
+}
+
+footer{
+    background-color: darkseagreen;
+}
+
+/*id*/
+#bigbox{
+    margin: 50px 20px;
+}
+
+#keyWordDiv img{
+    display: inline;
+}
+#keyWordDiv p{
+    display: inline;
+}
+#keyWordDiv{
+    width: 100%;
+}
+
+#mySearchBar{
+    margin: 30px 0px;
+}
+#mySearchBar input{
+    display: inline;
+}
+#mySearchBar form{
+    display: inline;
+}
+
+#myDicLink a{
+    color: black;
+}
+#myDicLink a:link{
+    color: black;
+}
+#myDicLink a:visited{
+    color: black;
+}
+#myDicLink a:hover{
+    text-decoration-line: none;
+    color: blue;
+}
+
+#myDicFrame{
+    text-align: center;
+}
+
+#myWord{
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 80%;
+    text-align: center;
+    border-style: solid;
+}
+
+/*class*/
+.title{
+    text-align: center;
+}
+.myButton{
+    text-align: center;
+}
+.fixed{
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    margin-top: -2.8em;
+}
+.footer{
+    text-align: center;
+    background-color:darkseagreen;
+    margin: 0px;
+}
+.footer a{
+    color:darkslateblue;
+}
+
+.wordCon{
+    background-color: darkseagreen;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.Diciframe{
+    width:90%;
+    height:500px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.DicLink{
+    margin: 0px 20px 0px 0px ;
+}
+
+.text-align-center{
+    text-align: center;
+}
