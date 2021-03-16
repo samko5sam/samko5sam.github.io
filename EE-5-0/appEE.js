@@ -142,15 +142,13 @@ function addAllatag(){
     if (Config.myWord != ""){
         var DicLink = document.getElementById("myDicLink");
         var mymodal = document.getElementById("DicLink");
-        if (Config.mode != "anki") {
-            DicLink.innerHTML  = '<button type="button" onclick="openAllTab()" class="btn btn-primary">彈出所有視窗</button>';
-            DicLink.innerHTML += '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#DicLink-modal" id="">字典連結</button>'
+        DicLink.innerHTML  = '<button type="button" onclick="openAllTab()" class="btn btn-primary">彈出所有視窗</button>';
+        DicLink.innerHTML += '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#DicLink-modal" id="">字典連結</button>'
 
-            for (var i = 0; i < Dic.length; i++) {
-                var dicname = Dic[i][0];
-                mymodal.innerHTML += '<a id="engine-a-'+i+'" href="" target="_blank" rel="nofollow" class="DicLink">'+dicname+'</a><hr>';
-            };
-        }
+        for (var i = 0; i < Dic.length; i++) {
+            var dicname = Dic[i][0];
+            mymodal.innerHTML += '<a id="engine-a-'+i+'" href="" target="_blank" rel="nofollow" class="DicLink">'+dicname+'</a><hr>';
+        };
 
         DicLink.innerHTML += '<hr><p class="text-align-center">在這裡開啟</p><hr>';
         DicLink.innerHTML += '<ul class="nav nav-tabs" id="framenavtabs"></ul>';
@@ -279,7 +277,6 @@ function ankimode(){
 	}
     var footer = document.getElementById("footer");
     var alsonow = document.getElementById("alsonowandmyword");
-    footer.style = "margin-top:1.5em;";
     alsonow.innerHTML = '加油！卡片快做完了 <a href="https://alsonow.neocities.org/EE/">alsonow英英</a>'
 }//end
 
