@@ -1,0 +1,172 @@
+<!DOCTYPE html><!-- alsonow英英 v5.0 -->
+<html lang="zh" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>ALSONOW | 多個網路英英字典一次搜尋</title>
+        <meta name="author" content="samko5sam">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="https://alsonow.neocities.org/img/alsonow_icon.png">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <!-- styleEE.css -->
+        <link rel="stylesheet" href="styleEE.css">
+    </head>
+    <body>
+<!-- navbar -->
+        <div class="p-4 bg-info text-white">
+            連結網站之內容非alsonow提供
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <a href="#" class="navbar-brand">
+                <img src="https://alsonow.neocities.org/img/alsonow_icon.png" alt="alsonow" width="30px">英英
+            </a>
+
+            <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <span id="addtobtn"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" onclick="scrolltotop()" class="nav-link">TOP</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-bottom">
+            <div id="keyWordDiv" class="">
+                <span class="wordCon ankimode-none">
+                    <p>搜尋關鍵字為：<span class="fillinMyWord">無</span></p>
+                </span>
+            </div>
+        </nav>
+
+        <noscript>
+            <div class="jumbotron">
+                <h1>NO javascript</h1>
+                <p>您的瀏覽器不支援javascript，所以不能使用相關功能</p>
+                <p><a class="btn btn-primary btn-lg" href="https://alsonow.neocities.org/">GO HOME</a></p>
+            </div>
+        </noscript>
+<!-- container -->
+        <div class="container">
+            <div class="jumbotron">
+                <p class="" style="">ALSONOW - ALL搜NOW</p>
+                <h1 class="text-align-center fillinMyWord" id="alsonowandmyword" style="">alsonow英英</h1>
+            </div>
+            <div id="mySearchBar">
+                <form method="get" class="form-inline">
+                    <div class="form-group text-align-right">
+                        <div class="input-group input-group-md">
+                            <input type="text" name="myWord" id="myWord" class="form-control text-align-center" placeholder="輸入搜尋">
+                            <div class="input-group-append">
+                                <input type="submit" value="GO" class="myButton">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">自訂搜尋</span>
+                            </div>
+                            <input type="text" name="cdic" id="cdic" class="form-control">
+                            <small><a href="#learn-more-about-cdic">了解更多</a></small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="fo" value="y" id="fo">
+                        <label for="fo">open frame</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">TO</span>
+                            </div>
+                            <input type="number" name="to" id="to" class="form-control">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!--自動生成連結-->
+            <hr class=""><p class="text-align-center">連結</p><hr class="">
+            <div class="modal fade" id="DicLink-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">字典連結</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" id="DicLink">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="myDicLink" class=""></div>
+
+            <!-- 自動生成連結並開在頁面內 -->
+            <div id="myDicFrame"></div>
+
+            <!-- other -->
+            <hr><p class="text-align-center">其他</p><hr>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mylocationQRCODEModal">本頁QRcode</button>
+            <div class="modal fade" id="mylocationQRCODEModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">本頁QRcode</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body text-align-center">
+                            <a href="" target="_blank" id="locationQRCODElink">
+                                <div id="locationQRCODE"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" onclick="listAllDic()" class="btn btn-primary" data-toggle="modal" data-target="#listAllDicModal">字典資訊</button>
+            <div class="modal fade" id="listAllDicModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">字典資訊</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" id="listAllDicFillin">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#learn-more-about-cdic-modal" id="learn-more-about-cdic">關於自訂搜尋</button>
+            <div class="modal fade" id="learn-more-about-cdic-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">自訂搜尋</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" id="listAllDicFillin">
+                            <h2>例子：</h2>
+                            <p>https://tw.voicetube.com/definition/!q</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- jquery -->
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <!-- qrcode -->
+        <script type="text/javascript" src="jquery.qrcode.min.js"></script>
+        <!-- bootstrap -->
+        <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+        <!-- appEE.js -->
+        <script type="text/javascript"src="appEE.js"></script>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html><!--ALL全搜英英繁體中文版 v4.0-->
+<html lang="zh">
+    <head>
+        <title>ALSONOW-多個網路英英字典一次搜尋</title><!--網頁標題-->
+        <meta charset="utf-8"><!--文件編碼-->
+        <meta name="author" content="samko5sam"><!--作者-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="https://alsonow.neocities.org/img/alsonow_icon.png"/><!-- 網站的favicon小圖標-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><!--jquery-->
+        <script type="text/javascript" src="jquery.qrcode.min.js"></script>
+        
+        <link rel="stylesheet" href="styleEE.css">
+        <script src="appEE.js"></script>
+    </head>
+    <body>
+        <div id="bigbox"><!--最外圈-->
+            
+        <noscript><h1>您的瀏覽器不支援javascript</h1></noscript>
+        
+        <!--title-->
+        <p class="ankimode-none" style="">ALSONOW - ALL搜NOW</p>
+        <h1 class="title fillinMyWord" id="alsonowandmyword" style="">alsonow英英</h1>
+        
+        <!--search-->
+        <div id="mySearchBar">
+            <form method="get">
+                <div class="text-align-center">
+                    <input type="text" name="myWord" id="myWord" class="textinput" placeholder="輸入搜尋"><br><br>
+                </div>
+                <input type="text" name="cdic" id="cdic" class="textinput" placeholder="自訂搜尋">
+                <input type="checkbox" name="fo" value="y" id="fo"><label for="fo">open-frame</label>
+                <input type="number" name="to" id="to" class="" placeholder="TO"><br>
+                <input type="submit" value="GO" class="myButton">
+            </form>
+        </div>
+            
+        <!--自動生成連結-->
+        <p class="ankimode-none">連結</p>
+        <hr class="ankimode-none">
+        <div id="myDicLink" class=""></div>
+            
+        <!--自動生成連結並開在頁面內-->
+        <div id="myDicFrame"></div>
+        
+        <!--qrcode-->
+        <p>本頁QRcode</p>
+        <hr>
+        <a href="" target="_blank" id="locationQRCODElink">
+            <div id="locationQRCODE"></div>
+        </a>
+            
+        <hr>
+        <div>
+            <a href="javascript:;" onclick="listAllDic()">字典資訊</a>
+        </div>
+        <br>
+            
+        </div><!--box-->
+        <footer>
+            <div id="keyWordDiv" class="fixed">
+                <span class="wordCon ankimode-none" style="">
+                    <p>搜尋關鍵字為：<span class="fillinMyWord">無</span></p>
+                </span>
+                <div class="footer" id="footer">
+                    <p>
+                        <span> 連結網站之內容非alsonow提供</span>
+                        <span id="addtobtn"></span>
+                        <a href="javascript:;" onclick="scrolltotop()"> TOP</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
