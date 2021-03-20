@@ -181,7 +181,7 @@ function addAllFrame(){
         DicFrame.innerHTML = '<hr><p class="text-align-center">內嵌視窗</p><hr><button type="button" onclick="reloadAllFrame()" class="myButton">重新整理內嵌視窗</button><br><br>';
         for (var i = 0; i < Dic.length; i++) {
             var nowFrame = "iframe-"+i;
-            DicFrame.innerHTML += '<iframe src="" title="" id="'+nowFrame+'" name="'+nowFrame+'" class="Diciframe"></iframe><br>';
+            DicFrame.innerHTML += '<iframe src="" title="" id="'+nowFrame+'" name="'+nowFrame+'" class="Diciframe" width="100%" height="550px"></iframe><br>';
         };
     }
 }//end
