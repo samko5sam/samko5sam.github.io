@@ -191,7 +191,7 @@ function openAllTab(){
         window.open(Dic[i][3]);
       };
     } else {
-      alert("已取消\nCancled");
+      $.notify("已取消\nCancled");
     }
   }
 }//end
