@@ -184,9 +184,16 @@ function openAllFrame(){
 }//end
 
 function openAllTab(){
-  for (var i = 0; i < Dic.length; i++) {
-    window.open(Dic[i][3]);
-  };
+  if (Dic.length > 5) {
+    let response = confirm("確定要彈出所有視窗？\nAre You Sure?");
+    if (response == true) {
+      for (var i = 0; i < Dic.length; i++) {
+        window.open(Dic[i][3]);
+      };
+    } else {
+      alert("已取消\nCancled");
+    }
+  }
 }//end
 //
 // function reloadAllFrame(){
