@@ -1,0 +1,120 @@
+{
+  "videos" : [
+    {
+      "videoPlatform" : "youtube",
+      "alsonowID" : "",
+      "videoID" : "https://youtu.be/EFafSYg-PkI",
+      "videoTitle" : "CSS Grid Tutorial | CSS Grid Crash Course",
+      "userName" : "Dev Ed",
+      "imgsrc" : "https://yt3.ggpht.com/ytc/AAUvwnhYs6E9SqtWTikVdaGFwXzNmXPTR6ko2gNkZi-fEw=s176-c-k-c0x00ffffff-no-rj",
+      "videoTime" : "20190420",
+      "tags" : [
+        "CSS",
+        "Grid"
+      ],
+      "videoDescription" : "CSS Grid Tutorial | CSS Grid Crash Course"
+    },
+    {
+      "videoPlatform" : "youtube",
+      "alsonowID" : "",
+      "videoID" : "https://youtu.be/5CB2pv7uais",
+      "videoTitle" : "20分鐘學會重量級排版軟體 InDesign #全片無廢話只劃重點​",
+      "userName" : "PAPAYA 電腦教室",
+      "imgsrc" : "https://yt3.ggpht.com/ytc/AAUvwngYAzmhkEdTNwxgj4gWMaARAWw6zF1Wo-syklf3ZA=s176-c-k-c0x00ffffff-no-rj",
+      "videoTime" : "20210401",
+      "tags" : [
+        "記得打開影片的CC字幕喔",
+        "InDesign​",
+        "排版",
+        "平面設計"
+      ],
+      "videoDescription" : ""
+    },
+    {
+      "videoPlatform" : "youtube",
+      "alsonowID" : "",
+      "videoID" : "https://youtu.be/53cNH5E2KjQ",
+      "videoTitle" : "小米手環 6 正式亮相！傳聞中的真三防 Apple Watch 果粉怎麼看？遊戲中也可以開長賜號了！科技小電報 (4/2)​",
+      "userName" : "電獺少女-女孩的科技日常",
+      "imgsrc" : "https://yt3.ggpht.com/ytc/AAUvwnj-3nS4kzEeLrIOculrZiMfKkxXS3V6O_n0zevK1w=s176-c-k-c0x00ffffff-no-rj",
+      "videoTime" : "20210402",
+      "tags" : [
+        "小米手環"
+      ],
+      "videoDescription" : ""
+    },
+    {
+      "videoPlatform" : "youtube",
+      "alsonowID" : "",
+      "videoID" : "https://youtu.be/hQCAhxDCCH4",
+      "videoTitle" : "最會Wink的Idol是...?韓網投票最會Wink VS 最不會Wink偶像票選－TWICE／GFRIEND／BLACKPINK／Red Velvet／IZ*ONE／BTS／NCT／ASTRO​",
+      "userName" : "TEEPR 推一波",
+      "imgsrc" : "https://yt3.ggpht.com/ytc/AAUvwnhf6fCoYEm8cHdTwXvpFPhs_TKMtqedESnzUeJ6EA=s176-c-k-c0x00ffffff-no-rj",
+      "videoTime" : "20210401",
+      "tags" : [
+        "TWICE",
+        "BLACKPINK",
+        "BTS"
+      ],
+      "videoDescription" : ""
+    },
+    {
+      "videoPlatform" : "youtube",
+      "alsonowID" : "",
+      "videoID" : "https://youtu.be/EFafSYg-PkI",
+      "videoTitle" : "CSS Grid Tutorial | CSS Grid Crash Course",
+      "userName" : "Dev Ed",
+      "imgsrc" : "https://yt3.ggpht.com/ytc/AAUvwnhYs6E9SqtWTikVdaGFwXzNmXPTR6ko2gNkZi-fEw=s176-c-k-c0x00ffffff-no-rj",
+      "videoTime" : "20190420",
+      "tags" : [
+        "CSS",
+        "Grid"
+      ],
+      "videoDescription" : "CSS Grid Tutorial | CSS Grid Crash Course"
+    },
+    {
+      "videoPlatform" : "youtube",
+      "alsonowID" : "",
+      "videoID" : "https://youtu.be/5CB2pv7uais",
+      "videoTitle" : "20分鐘學會重量級排版軟體 InDesign #全片無廢話只劃重點​",
+      "userName" : "PAPAYA 電腦教室",
+      "imgsrc" : "https://yt3.ggpht.com/ytc/AAUvwngYAzmhkEdTNwxgj4gWMaARAWw6zF1Wo-syklf3ZA=s176-c-k-c0x00ffffff-no-rj",
+      "videoTime" : "20210401",
+      "tags" : [
+        "記得打開影片的CC字幕喔",
+        "InDesign​",
+        "排版",
+        "平面設計"
+      ],
+      "videoDescription" : ""
+    },
+    {
+      "videoPlatform" : "youtube",
+      "alsonowID" : "",
+      "videoID" : "https://youtu.be/53cNH5E2KjQ",
+      "videoTitle" : "小米手環 6 正式亮相！傳聞中的真三防 Apple Watch 果粉怎麼看？遊戲中也可以開長賜號了！科技小電報 (4/2)​",
+      "userName" : "電獺少女-女孩的科技日常",
+      "imgsrc" : "https://yt3.ggpht.com/ytc/AAUvwnj-3nS4kzEeLrIOculrZiMfKkxXS3V6O_n0zevK1w=s176-c-k-c0x00ffffff-no-rj",
+      "videoTime" : "20210402",
+      "tags" : [
+        "小米手環"
+      ],
+      "videoDescription" : ""
+    },
+    {
+      "videoPlatform" : "youtube",
+      "alsonowID" : "",
+      "videoID" : "https://youtu.be/hQCAhxDCCH4",
+      "videoTitle" : "最會Wink的Idol是...?韓網投票最會Wink VS 最不會Wink偶像票選－TWICE／GFRIEND／BLACKPINK／Red Velvet／IZ*ONE／BTS／NCT／ASTRO​",
+      "userName" : "TEEPR 推一波",
+      "imgsrc" : "https://yt3.ggpht.com/ytc/AAUvwnhf6fCoYEm8cHdTwXvpFPhs_TKMtqedESnzUeJ6EA=s176-c-k-c0x00ffffff-no-rj",
+      "videoTime" : "20210401",
+      "tags" : [
+        "TWICE",
+        "BLACKPINK",
+        "BTS"
+      ],
+      "videoDescription" : ""
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+body{
+  padding: 20px;
+  padding-bottom: 100px;
+}
+.videoDiv {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.videoTitle{
+  font-size: 25px;
+}
+.userImg{
+  margin: 10px;
+  display: inline;
+  border-radius: 50%;
+  border:5px solid gray;
+}
+.userName{
+  font-size: 25px;
+  display: inline;
+}
+.videoAndDescriptionDiv{
+  padding: 10px;
+  border: 2px solid gray;
+  margin: 10px;
+}
+.full-screen-mode-div{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.full-screen-mode-div div{
+  color:white;
+}
