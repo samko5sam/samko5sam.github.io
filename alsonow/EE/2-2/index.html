@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <!--ALL全搜英英繁體中文版 v2.2-->
+<html lang="zh">
+    <head>
+        <title>ALSONOW | 多個網路英英字典一次搜尋</title><!--網頁標題-->
+        <meta charset="utf-8"><!--文件編碼-->
+        <meta name="author" content="samko5sam"><!--作者-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/svg" href="https://alsonow.neocities.org/img/alsonow_icon.png"/><!-- 網站的favicon小圖標-->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"><!--導入jquery mobile css-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!--導入jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script><!--導入jquery mobile js-->
+        <meta name="google-site-verification" content="9MTC2GiXuYmnFhMVoqUV1BSWsvR26mP574G2CIINmKg" />
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <noscript>您的瀏覽器不支援javascript</noscript>
+        <div data-role="page" id="Phome">
+            <!--搜尋欄-->
+            <h1 class="title">ALSONOW - ALL搜NOW</h1>
+            <h1 class="title">英英</h1>
+            <div>
+                <label for="myWord">WORD</label>
+                <input type="text" name="myWord" size="50px" id="enterMyWord">
+                <button type="button" onclick="searchAndValidateForm()" class="myButton" accesskey="s">SEARCH</button><br><!--快捷鍵-->
+                <img src="https://alsonow.neocities.org/img/alsonow_icon.png" width="35" height="35"><h3>搜尋關鍵字為：</h3><h3 id="myKeyWord">無</h3>
+            </div><br>
+            <a href="#Pframe" data-role="button" data-inline="true" class="abutton">嵌入視窗</a>
+            <!--生成連結-->
+            <div>
+                <hr>
+                <button type="button" onclick="openAllTab()" class="myButton">OPEN ALL</button>
+                <hr>
+                <p>cambridge </p><a id="engine_a01" href="" target="_blank"></a>
+                <hr>
+                <p>merriam webster </p><a id="engine_a02" href="" target="_blank"></a>
+                <hr>
+                <p>longman </p><a id="engine_a03" href="" target="_blank"></a>
+                <hr>
+                <p>dictionary.com </p><a id="engine_a04" href="" target="_blank"></a>
+                <hr><br>
+            </div>
+            <a href="#Pframe" data-role="button" data-inline="true" class="abutton">嵌入視窗</a><br>
+            
+            <div data-role="footer" data-position="fixed" class="footer">
+                <p>連結網站之內容非alsonow提供</p>
+            </div>
+        </div>
+        <!--內嵌式窗-->
+        <div data-role="page" id="Pframe">
+            <div data-role="header" data-position="fixed">
+                <h1 class="title">ALSONOW-多個網路英英字典一次搜尋</h1>
+            </div>
+            <div>
+                <img src="https://alsonow.neocities.org/img/alsonow_icon.png" width="35" height="35"><h3>搜尋關鍵字為：</h3><h3 id="myKeyWord02">無</h3>
+            </div><br>
+            <a href="#Phome" data-role="button" data-inline="true" class="abutton">返回</a>
+            <div>
+                <button type="button" onclick="openAllFrame()" class="myButton">RELOAD FRAME</button><br>
+
+                <p>cambridge</p><br>
+                <iframe src="" title="cambridge" width="90%" height="450" id="iframe01" name="iframe01"></iframe><br>
+
+                <p>merriam webster</p><br>
+                <iframe src="" title="merriam webster" width="90%" height="450" id="iframe02" name="iframe02"></iframe><br>
+                <!--
+                <p>longman</p><br>
+                <iframe src="" title="longman" width="90%" height="450" id="iframe03" name="iframe03"></iframe><br>-->
+
+                <p>dictionary.com</p><br>
+                <iframe src="" title="dictionary.com" width="90%" height="450" id="iframe04" name="iframe04"></iframe><br>
+            </div>
+            <a href="#Phome" data-role="button" data-inline="true" class="abutton">返回</a>
+            <div data-role="footer" data-position="fixed" class="footer">
+                <p>連結網站之內容非alsonow提供</p>
+            </div>
+        </div>
+        <!--定義搜尋網址(keyword在結尾)-->
+        <div data-role="page" id="Pengine">
+            <div>
+                <hr><h6>搜尋網址：</h6><br><hr>
+                <h6>cambridge </h6>
+                <h6 id="engine_01d">https://dictionary.cambridge.org/us/dictionary/english/</h6><br>
+
+                <h6>merriam webster </h6>
+                <h6 id="engine_02d">https://www.merriam-webster.com/dictionary/</h6><br>
+
+                <h6>longman </h6>
+                <h6 id="engine_03d">https://www.ldoceonline.com/dictionary/</h6><br>
+
+                <h6>dictionary.com </h6>
+                <h6 id="engine_04d">https://www.dictionary.com/browse/</h6><br>
+            </div>
+            <div data-role="footer" data-position="fixed" class="footer">
+                <p>連結網站之內容非alsonow提供</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+.title {
+    color: darkmagenta ;
+    font-size: 50px;
+    text-align: center;
+}
+.myButton{
+}
+p{
+    display: inline;
+}
+h3{
+    display: inline;
+    font-size: 30px;
+}
+iframe{
+    background-color: white;
+    border:1px solid black;
+}
+h6{
+    display: inline;
+    color: brown;
+}
+.footer{
+    text-align: center;
+    background-color: black;
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+}
+a:active{
+    text-decoration:none;
+}
+input{
+    border-color: black;
+    border-style: solid ;
+    border-width: 2px ;
+    font-size: 18px;
+}
+label{
+    font-size: 18px;
+}
+.abutton{
+    font-size: 23px;
+}
+
+body {
+	  padding: 10px;
+}
+.jumbotron {
+    background-color: #6f5499;
+		color: #FFFFFF;
+		text-align: center;
+}
+
+/*myFloatElement*/
+.myFloatElement{
+    position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+    top: 30%;  /*設置垂直位置*/
+    right: -5px;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+    background: #40DCA5;  /*背景顏色*/
+    padding: 10px 20px;
+    border-radius: 10px;  /*圓角*/
+    color:white;
+}
+.myFloatElement a{
+    color:white;
+    text-decoration:none;
+}
+.myFloatElement a:hover{
+    color:white;
+    text-decoration:none;
+}
+.myFloatElement a:active{
+    color:white;
+    text-decoration:none;
+}
+
+#myFloatElement01{
+    margin-top: 0px;
+}
+#myFloatElement02{
+    margin-top: 70px;
+}
+#myFloatElement03{
+    margin-top: 140px;
+}
+#myFloatElement04{
+    margin-top: 210px;
+}
+#myFloatElement05{
+    margin-top: 280px;
+}
+/*topButton*/
+.topButton{
+    position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+    top: 70%;  /*設置垂直位置*/
+    right: -10px;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+    background: #40DCA5;  /*背景顏色*/
+    padding: 10px 20px;
+    border-radius: 10px;  /*圓角*/
+    color:white;
+}
+.topButton a{
+    color:white;
+    text-decoration:none;
+}
+.topButton a:hover{
+    color:white;
+    text-decoration:none;
+}
+.topButton a:active{
+    color:white;
+    text-decoration:none;
+}
