@@ -1,0 +1,51 @@
+{
+  "webpagetitle" : [true,"alsonow 英英"],
+  "htmltitle" : [true,"alsonow 英英"],
+  "accountname" : [false,""],
+  "profilepicture" : [false,""],
+  "description" : [false,""],
+  "footer" : [true,"<a href='https://alsonow.neocities.org/'>alsonow</a>"],
+  "htmlelement" : [false,""],
+  "links" : [
+    {
+      "htmlbefore" : "<hr><p>alsonow EE</p>",
+      "buttonname" : "alsonow EE 5",
+      "href" : "https://samko5sam.github.io/alsonow/EE/5-0/",
+      "target" : "_blank",
+      "enable" : "enable",
+      "nofollow" : ""
+    },
+    {
+      "htmlbefore" : "",
+      "buttonname" : "alsonow EE 4",
+      "href" : "https://samko5sam.github.io/alsonow/EE/4-0/",
+      "target" : "_blank",
+      "enable" : "enable",
+      "nofollow" : ""
+    },
+    {
+      "htmlbefore" : "<hr>",
+      "buttonname" : "alsonow EE 5.1 beta",
+      "href" : "https://samko5sam.github.io/alsonow/EE/5-1/",
+      "target" : "_blank",
+      "enable" : "enable",
+      "nofollow" : ""
+    },
+    {
+      "htmlbefore" : "<hr><p>android app</p><p style='color:white'>僅能擇一安裝</p>",
+      "buttonname" : "alsonow EE 5.1 android beta",
+      "href" : "https://github.com/samko5sam/alsonow-EE/releases/download/v5.1.0/samko5sam-alsonow-EE-v5.1.0.apk",
+      "target" : "",
+      "enable" : "enable",
+      "nofollow" : ""
+    },
+    {
+      "htmlbefore" : "",
+      "buttonname" : "alsonow EE 5 android beta",
+      "href" : "https://github.com/samko5sam/alsonow-EE/releases/download/v5.0.0/samko5sam-alsonow-EE-v5.0.0.apk",
+      "target" : "",
+      "enable" : "enable",
+      "nofollow" : ""
+    }
+  ]
+}
