@@ -1,0 +1,19 @@
+{
+  "webpagetitle" : [true,"samko5sam"],
+  "htmltitle" : [true,"samko5sam"],
+  "accountname" : [false,""],
+  "profilepicture" : [false,""],
+  "description" : [false,""],
+  "footer" : [true,"<a target='_blank' href='https://git.io/samko5sam'>samko5sam</a>"],
+  "htmlelement" : [false,""],
+  "links" : [
+    {
+      "htmlbefore" : "<hr><p>alsonow link</p><div style='color:white;'>用ALSONOW幫你一次搜尋多網站吧！只需輸入一次關鍵字，就可以一次搜尋多個網站。程式碼是由網路及書籍各種教學合起來的，目前還不完整</div><hr>",
+      "buttonname" : "alsonow",
+      "href" : "alsonow",
+      "target" : "",
+      "enable" : "enable",
+      "nofollow" : ""
+    }
+  ]
+}

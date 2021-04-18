@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- icon from flaticon
+https://code-boxx.com/disable-copy-text-javascript-css/ -->
+<!-- https://gist.github.com/samko5sam/6d49de90892be10928922d550c1293db -->
+<html lang="zh">
+<head>
+  <title>ig link page</title>
+  <meta charset="utf-8">
+  <meta name="author" content="samko5sam">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link class="myphoto" rel="icon" type="image/png" href="profilePicture.png">
+  <!--[if lte IE 9]>
+  <script>alert("用IE瀏覽器可能會造成網頁不正常");</script>
+  <![endif]-->
+  <style media="screen">
+* {
+  user-select: none;
+  background:#5f5f5f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*::selection {
+  background: none;
+}
+*::-moz-selection {
+  background: none;
+}
+.container{
+  padding:20px 0px;
+}
+.profile-picture{
+  width: 130px;
+  height: 130px;
+  border-radius:50%;
+  border:3px solid white;
+}
+.my-links{
+  text-align:center;
+}
+.my-links a{
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 3px solid white;
+  width: 70%;
+  word-wrap:break-word;
+  transition: all 0.3s ease;
+}
+.my-links a:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  transition: all 0.3s ease;
+  background-color: white;
+  color: #5f5f5f;
+}
+
+.header{
+  text-align:center;
+  padding: 20px 0px;
+}
+.header h2{
+  color:#d0db97;
+  font-size:20px;
+  padding: 0px 0px 10px;
+}
+.header h2 a{
+  color:#d0db97;
+  font-size:20px;
+}
+.header h1 {
+  color:white;
+  font-size:25px;
+  padding: 10px 0px;
+}
+.header h1 a{
+  color:white;
+  font-size:25px;
+}
+
+/*disablebutton*/
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow:none;
+}
+.disabled:hover {
+  opacity: 0.2;
+  cursor: not-allowed;
+  box-shadow:none;
+}
+
+a{
+  -webkit-text-decoration-line: underline; /* Safari */
+  text-decoration-line: underline;
+}
+.footer{
+  text-align:center;
+  color:#d0db97;
+  padding:30px 0px;
+}
+.footer a{
+  text-align:center;
+  color:#d0db97;
+}
+.mydescription{
+  padding: 30px 0px;
+  text-align: center;
+  color: white;
+}
+.mydescription a{
+  text-align: center;
+  color: white;
+}
+
+p{
+  color: #d0db97;
+  font-size: 20px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="page-title"></h1>
+      <img src="" class="profile-picture">
+      <h2 class="accountname"></h2>
+    </div>
+    <div class="my-links"></div>
+    <div class="mydescription"></div>
+    <div class="footer"><span class="footer-text"></span></div>
+    <div class="myelement"></div>
+  </div>
+
+    <script type="text/javascript">
+// event listeners
+document.addEventListener("DOMContentLoaded",handleJson);
+
+let myJsonLinkData;
+
+// functions
+function handleJson(){
+  // json and onload
+  const requestFile = "ig-link-page-config.json";
+  const request = new XMLHttpRequest();
+  request.open('GET', requestFile);
+  request.responseType = 'json';
+  request.send();
+  request.onload = function() {
+    myJsonLinkData = request.response;
+    let data = myJsonLinkData;
+    fillinMyConfig(data.webpagetitle,data.htmltitle,data.accountname,data.profilepicture,data.description,data.footer,data.htmlelement);
+    linkButtonLoop();
+  }
+}
+function fillinMyConfig(webpagetitle,htmltitle,accountname,profilepicture,description,footer,htmlelement) {
+  const pagetitle = document.querySelector(".page-title");
+  const htmlaccountname = document.querySelector(".accountname");
+  const favicon = document.querySelector(".myphoto");
+  const myphoto = document.querySelector(".profile-picture");
+  const mydescription = document.querySelector(".mydescription");
+  const myfooter = document.querySelector(".footer-text");
+  const myelement = document.querySelector(".myelement");
+
+  webpagetitle = webpagetitle[0] === true && webpagetitle[1] !== "" ? webpagetitle[1] : undefined;
+  htmltitle = htmltitle[0] === true && htmltitle[1] !== "" ? htmltitle[1] : "";
+  accountname = accountname[0] === true && accountname[1] !== "" ? accountname[1] : undefined;
+  webpagetitle = webpagetitle === undefined && accountname !== undefined ? accountname : webpagetitle ;
+  profilepicture = profilepicture[0] === true && profilepicture[1] !== "" ? profilepicture[1] : undefined;
+  description = description[0] === true && description[1] !== "" ? description[1] : "";
+  footer = footer[0] === true && footer[1] !== "" ? footer[1] : "";
+  htmlelement = htmlelement[0] === true && htmlelement[1] !== "" ? htmlelement[1] : '';
+
+  document.title = webpagetitle;
+  pagetitle.innerHTML = htmltitle;
+  htmlaccountname.innerHTML = accountname ? accountname : "";
+  if (profilepicture === undefined){
+    favicon.href = "profilePicture.png";
+    myphoto.remove();
+  }else{
+    favicon.href = profilepicture;
+    myphoto.src = profilepicture;
+  }
+  mydescription.innerHTML = description;
+  myfooter.innerHTML = footer;
+  myelement.innerHTML = htmlelement;
+}
+function linkButtonLoop() {
+  let data = myJsonLinkData;
+  const myLinksDiv = document.querySelector(".my-links");
+  for (var i = 0; i < data.links.length; i++) {
+    if (data.links[i].htmlbefore) {
+      myLinksDiv.innerHTML += data.links[i].htmlbefore;
+    }
+    createLinkButtonAndAdd(data.links[i].buttonname,data.links[i].href,data.links[i].target,data.links[i].enable,data.links[i].nofollow);
+  }
+}
+function createLinkButtonAndAdd(buttonText,myhref,target,enable,nofollow) {
+  const myLinksDiv = document.querySelector(".my-links");
+  const linkButton = document.createElement("a");
+  linkButton.innerHTML = buttonText;
+  if (!myhref) myhref = "javascript:alert('ERROR!');";
+  if (enable !== "enable"){
+    myhref = "javascript:alert('Disabled!');";
+    linkButton.classList.add("disabled");
+  }
+  linkButton.href = myhref;
+  if (target) {
+    if (enable !== "enable"){
+      linkButton.target = "_self";
+    } else {
+      linkButton.target = target;
+    }
+  }
+  if (nofollow == "nofollow") linkButton.rel = "nofollow";
+  myLinksDiv.appendChild(linkButton);
+}
+  </script>
+</body>
+</html>
