@@ -11,9 +11,8 @@
     "display": "standalone",
     "orientation": "portrait-primary",
     "description": "依照youtube教學影片製作出的簡易計算機",
-    "dir": "ltr", //左至右
-    "lang": "zh-Hant-TW" ,//繁體中文
-    "background_color": "#68e86e", //淺綠色
-    "theme_color": "#f26d6d", //粉紅色
+    "lang": "zh-Hant-TW",
+    "background_color": "#68e86e",
+    "theme_color": "#f26d6d",
     "prefer_related_applications": false
 }
