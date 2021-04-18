@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link rel="icon" href="keys.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="calculator-grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <button data-all-clear class="span-two">AC</button>
+    <button data-delete class="">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace" viewBox="0 0 16 16">
+        <path d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z"/>
+        <path d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1h7.08zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-7.08z"/>
+      </svg>
+    </button>
+    <button data-operation class="">÷</button>
+    <button data-number class="">7</button>
+    <button data-number class="">8</button>
+    <button data-number class="">9</button>
+    <button data-operation class="">×</button>
+    <button data-number class="">4</button>
+    <button data-number class="">5</button>
+    <button data-number class="">6</button>
+    <button data-operation class="">+</button>
+    <button data-number class="">1</button>
+    <button data-number class="">2</button>
+    <button data-number class="">3</button>
+    <button data-operation class="">-</button>
+    <button data-number class="">.</button>
+    <button data-number class="">0</button>
+    <button data-equals class="span-two">=</button>
+  </div>
+  <div class="footer">
+    <ul style="color:white">
+      <li>code : <a target="_blank" style="color:white;text-decoration: none;" href="https://youtu.be/j59qQ7YWLxw">https://youtu.be/j59qQ7YWLxw</a></li>
+      <li>icon : <a target="_blank" style="color:white;text-decoration: none;" href="https://www.flaticon.com/">https://www.flaticon.com/</a> , <a target="_blank" style="color:white;text-decoration: none;" href="https://icons.getbootstrap.com/">https://icons.getbootstrap.com/</a></li>
+    </ul>
+  </div>
+</body>
+</html>
