@@ -12,7 +12,7 @@
     "orientation": "portrait-primary",
     "description": "依照youtube教學影片製作出的簡易計算機",
     "lang": "zh-Hant-TW",
-    "background_color": "#68e86e",
-    "theme_color": "#f26d6d",
+    "background_color": "#FFFFFF",
+    "theme_color": "#000000",
     "prefer_related_applications": false
 }
