@@ -49,8 +49,8 @@
     },
     {
       "htmlbefore" : "<hr><p>bookmarklet</p>",
-      "buttonname" : "5.1(you can save this javascript link as a bookmark)",
-      "href" : "javascript:function iptxt(){var word=prompt('input word');var d=document;try{if(!d.body)throw(0);window.open('https://samko5sam.github.io/alsonow/EE/5-1/?myWord='+word, '_blank');}catch(e){alert('Please wait until the page has loaded.');}}iptxt();void(0)",
+      "buttonname" : "alsonow!",
+      "href" : "javascript:function iptxt(){var word=prompt('input word');var d=document;try{if(!d.body)throw(0);if (word !== null) {window.open('https://samko5sam.github.io/alsonow/EE/5-1/?myWord='+word, '_blank')};}catch(e){alert('Please wait until the page has loaded.');}}iptxt();void(0)",
       "target" : "",
       "enable" : "enable",
       "nofollow" : ""
