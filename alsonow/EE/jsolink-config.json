@@ -11,7 +11,7 @@
       "htmlbefore" : "<hr><p>alsonow EE</p>",
       "buttonname" : "alsonow EE 5",
       "href" : "https://samko5sam.github.io/alsonow/EE/5-0/",
-      "target" : "_blank",
+      "target" : "",
       "enable" : "enable",
       "nofollow" : ""
     },
@@ -19,7 +19,7 @@
       "htmlbefore" : "",
       "buttonname" : "alsonow EE 4",
       "href" : "https://samko5sam.github.io/alsonow/EE/4-0/",
-      "target" : "_blank",
+      "target" : "",
       "enable" : "enable",
       "nofollow" : ""
     },
@@ -27,7 +27,7 @@
       "htmlbefore" : "<hr>",
       "buttonname" : "alsonow EE 5.1 beta",
       "href" : "https://samko5sam.github.io/alsonow/EE/5-1/",
-      "target" : "_blank",
+      "target" : "",
       "enable" : "enable",
       "nofollow" : ""
     },
